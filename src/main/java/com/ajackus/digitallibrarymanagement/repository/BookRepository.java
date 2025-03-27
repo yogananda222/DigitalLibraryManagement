@@ -9,5 +9,6 @@ import java.util.Optional;
 
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
-    Optional<Book> findByTitle(String title);
+	
+    Optional<Book> findByTitle(String title); // Custom query method to find a book by its title.
 }
